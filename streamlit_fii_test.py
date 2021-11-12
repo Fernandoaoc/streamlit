@@ -50,31 +50,31 @@ option=st.sidebar.selectbox('select graph',('CVM 2016', 'CVM 2017', 'CVM 2018', 
 physics=st.sidebar.checkbox('add physics interactivity?')
 
 if option=='CVM 2016':
-  HtmlFile = open("INSIGHTS_FIIS_2016.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2016.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
 
 if option=='CVM 2017':
-  HtmlFile = open("INSIGHTS_FIIS_2017.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2017.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
 
 if option=='CVM 2018':
-  HtmlFile = open("INSIGHTS_FIIS_2018.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2018.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
 
 if option=='CVM 2019':
-  HtmlFile = open("INSIGHTS_FIIS_2019.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2019.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
 
 if option=='CVM 2020':
-  HtmlFile = open("INSIGHTS_FIIS_2020.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2020.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
 
 if option=='CVM 2021':
-  HtmlFile = open("INSIGHTS_FIIS_2021.html", 'r', encoding='utf-8')
+  HtmlFile = open("html\INSIGHTS_FIIS_2021.html", 'r', encoding='utf-8')
   source_code = HtmlFile.read() 
   components.html(source_code, height = 700,width=700)
