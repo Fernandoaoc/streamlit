@@ -8,7 +8,7 @@ from pyvis.network import Network
 
 st.title("FII'S")
 
-data_end = 'df2_streamlit_test.csv'
+data_end = 'data\df2_streamlit_test.csv'
 date_column = 'data_trimestre'
 
 @st.cache
