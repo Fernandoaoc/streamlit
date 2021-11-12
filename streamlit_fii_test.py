@@ -17,11 +17,10 @@ def load_data():
     data[date_column] = pd.to_datetime(data[date_column], format='%Y-%m-%d')
     return data
 
-data_load_state = st.text('Loading data...')
-# Load 10,000 rows of data into the dataframe.
+
 data = load_data()
-# Notify the reader that the data was successfully loaded.
-data_load_state.text("Done! (using st.cache)")
+
+data_load_state.text("Testando....")
 
 if st.checkbox('Show raw data'):
     st.subheader('Raw data')
