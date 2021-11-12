@@ -17,6 +17,7 @@ def load_data():
     data[date_column] = pd.to_datetime(data[date_column], format='%Y-%m-%d')
     return data
 
+data_load_state = st.text('Testando 1, 2, 3...')
 
 data = load_data()
 
