@@ -28,7 +28,7 @@ if st.checkbox('Show raw data'):
     st.subheader('Raw data')
     st.write(data)
 
-def grafico(coluna)
+def grafico(coluna):
     docs = data[coluna].value_counts().sort_index()
     index = data[coluna].value_counts().sort_index().index
     doc=[]
