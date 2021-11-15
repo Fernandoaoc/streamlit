@@ -28,16 +28,21 @@ if st.checkbox('Show raw data'):
     st.subheader('Raw data')
     st.write(data)
 
-docs = data['data_trimestre'].value_counts().sort_index()
-index = data['data_trimestre'].value_counts().sort_index().index
-doc=[]
-ind=[]
-for d in docs:
-    doc.append(d)
-for i in index:
-    ind.append(i)
+def grafico(coluna)
+    docs = data[coluna].value_counts().sort_index()
+    index = data[coluna].value_counts().sort_index().index
+    doc=[]
+    ind=[]
+    for d in docs:
+        doc.append(d)
+    for i in index:
+        ind.append(i)
 
-table = pd.DataFrame(doc, index=ind, columns=["Nº de doc's"])
+    table = pd.DataFrame(doc, index=ind, columns=["Nº de doc's"])
+    return table
+
+table = grafico(date_column)
+cota = grafico("Qdade_cotas_emitidas")
 
 if st.checkbox('Show Number of Documents'):
     st.subheader('Documentos por Trimestre')
