@@ -42,7 +42,7 @@ def grafico(coluna)
     return table
 
 table = grafico(date_column)
-cota = grafico("Qdade_cotas_emitidas")
+cotas = grafico("Qdade_cotas_emitidas")
 
 if st.checkbox('Show Number of Documents'):
     st.subheader('Documentos por Trimestre')
@@ -50,6 +50,11 @@ if st.checkbox('Show Number of Documents'):
 
 st.bar_chart(table)
 
+if st.checkbox('Número de Cotas por Trimestre'):
+    st.subheader('Cotas por Trimestre')
+    st.table(cotas)
+
+st.bar_chart(cotas)
 
 st.sidebar.title("Manipulação da Rede")
 
